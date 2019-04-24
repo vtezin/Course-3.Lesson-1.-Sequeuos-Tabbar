@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, enter your login and password and press Enter:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ7-Pk-07x">
-                                <rect key="frame" x="35" y="70" width="250" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, enter your login and password and press Confirm:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ7-Pk-07x">
+                                <rect key="frame" x="25" y="70" width="270" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="GOC-ii-eMd"/>
+                                    <constraint firstAttribute="width" constant="270" id="GOC-ii-eMd"/>
                                     <constraint firstAttribute="height" constant="50" id="yRN-1y-Usm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -80,9 +80,12 @@
                                     <constraint firstAttribute="width" constant="100" id="DU6-Ts-lcp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Enter">
+                                <state key="normal" title="Confirm">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="1iN-r0-Ape" kind="showDetail" id="oB5-bC-aN4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IW-6H-Pfq">
                                 <rect key="frame" x="90.5" y="320" width="139" height="36"/>
@@ -119,6 +122,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.25" y="138.38028169014083"/>
+        </scene>
+        <!--Check AccessVC-->
+        <scene sceneID="v6g-kK-uW2">
+            <objects>
+                <viewController id="1iN-r0-Ape" customClass="CheckAccessVC" customModule="Course_3_Lesson_1__Sequeuos___Tabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqT-ft-YVH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your login or password is incorrect" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC8-Sr-ZlU">
+                                <rect key="frame" x="20" y="260" width="280" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3D8-Rh-xtr">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="yyI-EX-DWr"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tC8-Sr-ZlU" firstAttribute="centerY" secondItem="MqT-ft-YVH" secondAttribute="centerY" id="LQ6-vm-CDr"/>
+                            <constraint firstItem="q1Z-F1-gU6" firstAttribute="trailing" secondItem="tC8-Sr-ZlU" secondAttribute="trailing" constant="20" id="QIx-6r-zAM"/>
+                            <constraint firstItem="tC8-Sr-ZlU" firstAttribute="leading" secondItem="q1Z-F1-gU6" secondAttribute="leading" constant="20" id="Ykn-hF-5KC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q1Z-F1-gU6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tC9-Rs-dGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="138"/>
         </scene>
     </scenes>
 </document>

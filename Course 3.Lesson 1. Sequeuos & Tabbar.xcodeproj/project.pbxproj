@@ -12,6 +12,7 @@
 		84EFD287226FB08300B19727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFD285226FB08300B19727 /* Main.storyboard */; };
 		84EFD289226FB08500B19727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EFD288226FB08500B19727 /* Assets.xcassets */; };
 		84EFD28C226FB08500B19727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EFD28A226FB08500B19727 /* LaunchScreen.storyboard */; };
+		84EFD29422701D0200B19727 /* CheckAccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFD29322701D0200B19727 /* CheckAccessVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		84EFD288226FB08500B19727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EFD28B226FB08500B19727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EFD28D226FB08500B19727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EFD29322701D0200B19727 /* CheckAccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAccessVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				84EFD281226FB08300B19727 /* AppDelegate.swift */,
 				84EFD283226FB08300B19727 /* ViewController.swift */,
+				84EFD29322701D0200B19727 /* CheckAccessVC.swift */,
 				84EFD285226FB08300B19727 /* Main.storyboard */,
 				84EFD288226FB08500B19727 /* Assets.xcassets */,
 				84EFD28A226FB08500B19727 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				84EFD284226FB08300B19727 /* ViewController.swift in Sources */,
 				84EFD282226FB08300B19727 /* AppDelegate.swift in Sources */,
+				84EFD29422701D0200B19727 /* CheckAccessVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
