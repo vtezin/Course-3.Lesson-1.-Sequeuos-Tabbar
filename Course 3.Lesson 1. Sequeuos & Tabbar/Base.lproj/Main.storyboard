@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Check access-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Course_3_Lesson_1__Sequeuos___Tabbar" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,18 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, enter your login and password and press Confirm:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ7-Pk-07x">
-                                <rect key="frame" x="25" y="161" width="270" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, enter your login and password and press &quot;Check access&quot;:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ7-Pk-07x">
+                                <rect key="frame" x="25" y="84" width="270" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="GOC-ii-eMd"/>
-                                    <constraint firstAttribute="height" constant="50" id="yRN-1y-Usm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Paj-gm-dCV">
-                                <rect key="frame" x="45" y="246" width="230.5" height="74"/>
+                                <rect key="frame" x="45" y="176" width="230.5" height="74"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="VuB-hG-fJd">
                                         <rect key="frame" x="0.0" y="0.0" width="89.5" height="74"/>
@@ -55,23 +54,23 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="username"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O6w-HJ-Es5">
                                                 <rect key="frame" x="0.0" y="44" width="105" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5v-Qz-akd">
-                                <rect key="frame" x="90.5" y="355" width="139" height="36"/>
+                                <rect key="frame" x="90.5" y="285" width="139" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Check Access">
+                                <state key="normal" title="Check access">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -79,7 +78,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IW-6H-Pfq">
-                                <rect key="frame" x="90.5" y="411" width="139" height="36"/>
+                                <rect key="frame" x="90.5" y="341" width="139" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="I forgot my login"/>
                                 <connections>
@@ -87,7 +86,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qc-SO-HrU">
-                                <rect key="frame" x="69.5" y="467" width="181" height="36"/>
+                                <rect key="frame" x="69.5" y="397" width="181" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="I forgot my password"/>
                                 <connections>
@@ -99,7 +98,7 @@
                         <constraints>
                             <constraint firstItem="E5v-Qz-akd" firstAttribute="width" secondItem="0IW-6H-Pfq" secondAttribute="width" id="5lx-OU-GiK"/>
                             <constraint firstItem="Paj-gm-dCV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="79b-sF-2rQ"/>
-                            <constraint firstItem="Paj-gm-dCV" firstAttribute="top" secondItem="wZ7-Pk-07x" secondAttribute="bottom" constant="35" id="Htg-uA-wuQ"/>
+                            <constraint firstItem="Paj-gm-dCV" firstAttribute="top" secondItem="wZ7-Pk-07x" secondAttribute="bottom" constant="20" id="Htg-uA-wuQ"/>
                             <constraint firstItem="0IW-6H-Pfq" firstAttribute="top" secondItem="E5v-Qz-akd" secondAttribute="bottom" constant="20" id="LRc-Wo-wxT"/>
                             <constraint firstItem="E5v-Qz-akd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X0Y-1t-Km7"/>
                             <constraint firstItem="E5v-Qz-akd" firstAttribute="top" secondItem="Paj-gm-dCV" secondAttribute="bottom" constant="35" id="gOX-6u-Ql6"/>
@@ -107,7 +106,7 @@
                             <constraint firstItem="wZ7-Pk-07x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rdo-Ft-vX2"/>
                             <constraint firstItem="9qc-SO-HrU" firstAttribute="top" secondItem="0IW-6H-Pfq" secondAttribute="bottom" constant="20" id="tHM-aX-53z"/>
                             <constraint firstItem="9qc-SO-HrU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uym-Rp-pHW"/>
-                            <constraint firstItem="wZ7-Pk-07x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="w4o-Hw-qIq"/>
+                            <constraint firstItem="wZ7-Pk-07x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="w4o-Hw-qIq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <userDefinedRuntimeAttributes>
@@ -116,7 +115,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="hba-ps-RUo"/>
+                    <navigationItem key="navigationItem" title="Check access" largeTitleDisplayMode="never" id="hba-ps-RUo"/>
                     <connections>
                         <outlet property="login" destination="eHi-q8-b4t" id="hgt-AZ-i2c"/>
                         <outlet property="password" destination="O6w-HJ-Es5" id="0ne-fR-R5p"/>
