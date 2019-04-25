@@ -57,14 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				84EFD281226FB08300B19727 /* AppDelegate.swift */,
-				84EFD283226FB08300B19727 /* ViewController.swift */,
-				84EFD29322701D0200B19727 /* CheckAccessVC.swift */,
+				84EFD295227241C700B19727 /* Controllers */,
 				84EFD285226FB08300B19727 /* Main.storyboard */,
 				84EFD288226FB08500B19727 /* Assets.xcassets */,
 				84EFD28A226FB08500B19727 /* LaunchScreen.storyboard */,
 				84EFD28D226FB08500B19727 /* Info.plist */,
 			);
 			path = "Course 3.Lesson 1. Sequeuos & Tabbar";
+			sourceTree = "<group>";
+		};
+		84EFD295227241C700B19727 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84EFD283226FB08300B19727 /* ViewController.swift */,
+				84EFD29322701D0200B19727 /* CheckAccessVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

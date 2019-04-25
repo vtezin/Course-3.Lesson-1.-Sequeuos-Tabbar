@@ -19,18 +19,17 @@ class CheckAccessVC: UIViewController {
     var password = ""
     var action = ""
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         doAction(action: action)
     }
     
+    //проверка логина-пароля
     private func checkAccess(login: String, password: String) -> Bool {
         return login == correctLogin && password == correctPassword
     }
     
+    //обработка перехода
+    //выполнение определенного действия в зависимости от сигвея перехода
     private func doAction(action: String) {
         switch action {
         case "checkAccess":
