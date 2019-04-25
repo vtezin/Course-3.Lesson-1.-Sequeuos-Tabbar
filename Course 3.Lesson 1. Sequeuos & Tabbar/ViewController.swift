@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet var login: UITextField!
+    @IBOutlet var password: UITextField!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let destination = segue.destination as? CheckAccessVC else {return}
+        guard let action = segue.identifier else {return}
+        
+        destination.login = login.text ?? ""
+        destination.password = password.text ?? ""
+        destination.action = action
+        
     }
-
 
 }
 

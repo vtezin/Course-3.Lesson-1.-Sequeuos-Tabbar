@@ -10,21 +10,46 @@ import UIKit
 
 class CheckAccessVC: UIViewController {
 
+    @IBOutlet var resultInfo: UILabel!
+    
+    private let correctLogin = "Apple"
+    private let correctPassword = "Swift"
+    
+    var login = ""
+    var password = ""
+    var action = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        doAction(action: action)
     }
-    */
+    
+    private func checkAccess(login: String, password: String) -> Bool {
+        return login == correctLogin && password == correctPassword
+    }
+    
+    private func doAction(action: String) {
+        switch action {
+        case "checkAccess":
+            if checkAccess(login: login, password: password) {
+                resultInfo.text = "Access allowed"
+                resultInfo.textColor = .green
+            }
+            else
+            {
+                resultInfo.text = "Your login or password is incorrect"
+                resultInfo.textColor = .red
+            }
+        case "showLogin":
+            resultInfo.text = "Correct login: " + correctLogin
+        case "showPassword":
+            resultInfo.text = "Correct password: " + correctPassword
+        default:
+            resultInfo.text = "Unknown action"
+        }
+    }
 
 }
